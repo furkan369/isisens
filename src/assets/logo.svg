@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 68" fill="none">
+  <defs>
+    <linearGradient id="sRibbonMain" x1="14" y1="8" x2="44" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF5E36" />
+      <stop offset="28%" stop-color="#FFB03A" />
+      <stop offset="55%" stop-color="#7CE8C8" />
+      <stop offset="78%" stop-color="#22DCFA" />
+      <stop offset="100%" stop-color="#1499D8" />
+    </linearGradient>
+    <linearGradient id="sRibbonInner" x1="18" y1="12" x2="40" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFD25A" />
+      <stop offset="45%" stop-color="#FF8C3B" />
+      <stop offset="70%" stop-color="#48F0FF" />
+      <stop offset="100%" stop-color="#0EA5E9" />
+    </linearGradient>
+    <linearGradient id="flameGrad" x1="8" y1="52" x2="22" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#E04328" />
+      <stop offset="55%" stop-color="#FF7836" />
+      <stop offset="100%" stop-color="#FFC44D" />
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="36" y1="18" x2="58" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#5CF2FF" />
+      <stop offset="100%" stop-color="#15AEE0" />
+    </linearGradient>
+  </defs>
+  <circle cx="28" cy="24" r="16" fill="#FF6E38" fill-opacity="0.16" />
+  <circle cx="38" cy="42" r="16" fill="#18D6F0" fill-opacity="0.16" />
+  <path
+    d="M15.5 49.5C10.5 45.2 9.2 38.8 11.8 33.2C13.4 29.8 13.6 26.5 12.6 23.5C15.8 26.2 17.4 30.2 16.2 34.8C14.9 39.5 16.2 44.2 19.8 47.6C18.2 48.8 16.8 49.5 15.5 49.5Z"
+    fill="url(#flameGrad)"
+  />
+  <path
+    d="M20.5 47.2C16.8 43.2 16.0 37.5 18.2 32.0C19.6 28.4 19.5 24.4 17.8 20.5C21.8 23.8 23.6 28.6 22.2 34.0C20.9 38.8 22.0 43.0 24.8 46.0C23.4 46.8 21.9 47.2 20.5 47.2Z"
+    fill="url(#flameGrad)"
+  />
+  <path
+    d="M11.2 46.0C8.0 42.5 7.4 37.8 9.2 33.8C10.2 31.5 10.2 29.2 9.5 27.2C12.0 29.2 13.0 32.2 12.0 35.6C11.0 39.2 11.8 42.8 14.2 45.4C13.1 45.9 12.1 46.1 11.2 46.0Z"
+    fill="#FF6238"
+    opacity="0.85"
+  />
+  <path
+    d="M47.5 15.5C41.5 9.8 30.2 9.2 24.2 15.0C18.6 20.4 20.4 28.5 28.8 34.0C37.4 39.6 41.2 46.2 36.8 53.0C32.6 59.5 21.8 59.8 15.5 53.5"
+    stroke="url(#sRibbonMain)"
+    stroke-width="6.5"
+    stroke-linecap="round"
+  />
+  <path
+    d="M45.5 17.2C40.5 12.4 31.2 12.0 26.2 16.8C21.5 21.4 23.0 28.0 30.4 32.8C38.0 37.8 41.8 44.5 38.2 50.8C34.8 56.6 25.5 57.2 19.2 52.2"
+    stroke="url(#sRibbonInner)"
+    stroke-width="2.4"
+    stroke-linecap="round"
+  />
+  <circle cx="38.2" cy="30.2" r="2.5" fill="#4EF2FF" />
+  <path
+    d="M42.8 25.2C45.8 28.0 45.8 32.6 42.8 35.4"
+    stroke="url(#waveGrad)"
+    stroke-width="2.5"
+    stroke-linecap="round"
+  />
+  <path
+    d="M47.2 21.2C52.2 26.2 52.2 34.4 47.2 39.4"
+    stroke="url(#waveGrad)"
+    stroke-width="2.5"
+    stroke-linecap="round"
+  />
+  <path
+    d="M51.6 17.2C58.6 24.4 58.6 36.2 51.6 43.4"
+    stroke="url(#waveGrad)"
+    stroke-width="2.5"
+    stroke-linecap="round"
+  />
+</svg>
+

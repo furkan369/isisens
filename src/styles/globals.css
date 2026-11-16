@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #050B18;
+    --bg-secondary: #0B1424;
+    --card-surface: #142033;
+    --accent-orange: #FF713C;
+    --accent-orange-light: #FF9A38;
+    --accent-cyan: #15CBE0;
+    --accent-cyan-light: #39D8F3;
+    --text-primary: #FFFFFF;
+    --text-secondary: #B9C3CF;
+    --card-border: rgba(255, 255, 255, 0.10);
+  }
+
+  html {
+    background-color: #050B18;
+    color: #FFFFFF;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: #050B18;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Custom utility classes for reference-exact visual fidelity & 4K scaling */
+.isisens-page-bg {
+  background-color: #050C1A;
+  background-image:
+    radial-gradient(ellipse 38% 36% at 62% 28%, rgba(215, 90, 42, 0.24) 0%, rgba(215, 90, 42, 0.05) 52%, transparent 80%),
+    radial-gradient(ellipse 32% 30% at 84% 48%, rgba(21, 203, 224, 0.12) 0%, transparent 72%),
+    radial-gradient(ellipse 45% 32% at 24% 82%, rgba(210, 92, 45, 0.08) 0%, transparent 75%),
+    linear-gradient(180deg, #050C1B 0%, #050B18 55%, #040914 100%);
+}
+
+/* Reference-exact Feature Card glass + bottom-right copper glow */
+.isisens-feature-card {
+  background:
+    radial-gradient(125% 95% at 80% 104%, rgba(228, 108, 48, 0.34) 0%, rgba(185, 82, 38, 0.12) 48%, rgba(18, 30, 46, 0) 78%),
+    linear-gradient(145deg, rgba(36, 56, 72, 0.82) 0%, rgba(19, 30, 45, 0.90) 54%, rgba(15, 24, 37, 0.95) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 14px 34px -8px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.18),
+    inset 0 -1px 0 0 rgba(255, 130, 68, 0.22);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.28s ease, box-shadow 0.28s ease;
+}
+
+.isisens-feature-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.26);
+  box-shadow:
+    0 20px 42px -8px rgba(0, 0, 0, 0.65),
+    0 6px 24px -6px rgba(255, 113, 60, 0.24),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.24),
+    inset 0 -1px 0 0 rgba(255, 135, 72, 0.34);
+}
+
+/* Primary Orange CTA Button ("Teklif Al", "Sistemi Keşfet") */
+.isisens-btn-orange {
+  background: linear-gradient(92deg, #FF5740 0%, #FF7238 52%, #FF8B2E 100%);
+  box-shadow:
+    0 6px 22px -2px rgba(255, 102, 52, 0.48),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.28);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.isisens-btn-orange:hover {
+  transform: translateY(-1.5px);
+  filter: brightness(1.05);
+  box-shadow:
+    0 10px 28px -2px rgba(255, 108, 55, 0.64),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.36);
+}
+
+/* Secondary Dark Glass CTA Button ("Yönetici Demosu İzle") */
+.isisens-btn-secondary {
+  background: linear-gradient(180deg, rgba(22, 37, 54, 0.78) 0%, rgba(14, 25, 39, 0.86) 100%);
+  border: 1px solid rgba(112, 154, 184, 0.34);
+  box-shadow:
+    0 6px 20px -4px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
+  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.isisens-btn-secondary:hover {
+  transform: translateY(-1.5px);
+  border-color: rgba(57, 216, 243, 0.52);
+  box-shadow:
+    0 8px 24px -4px rgba(21, 203, 224, 0.20),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.14);
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .isisens-feature-card:hover,
+  .isisens-btn-orange:hover,
+  .isisens-btn-secondary:hover {
+    transform: none !important;
+  }
+}
